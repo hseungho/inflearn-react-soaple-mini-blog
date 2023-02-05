@@ -23,3 +23,8 @@
 ### 폴더 구성
 ![img.png](readme.resource/img/directory_design.png)
 
+## 구현
+> Bottom-up 방식으로 작은 부분부터 구현
+
+### UI Component
+> 사용자가 입력을 할 수 있게 해주는 Component
