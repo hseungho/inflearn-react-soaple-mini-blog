@@ -26,6 +26,28 @@
 ## 구현
 > Bottom-up 방식으로 작은 부분부터 구현
 
+아주 작은 UI Component부터 구현하여 Page 구현 시 필요한 Component를 조합
+
 ### UI Component
 > 사용자가 입력을 할 수 있게 해주는 Component
 
+### React-Router-Dom v6
+> 페이지별 경로를 Component 형식으로 구성하게 도와주는 리액트의 라이브러리  
+
+구성 예시
+![img.png](readme.resource/img/react-router-dom-example.png)
+  
+**Router Component**
+- BrowserRouter
+  - 브라우저의 경로를 탐색하게끔 도와주는 최상위 컴포넌트
+  - 브라우저의 히스토리 등을 이용하여 이전 페이지로 이동하게 도와준다.
+- Routes
+  - 여러개의 Route 컴포넌트를 children으로 가질 수 있는 컴포넌트
+- Route
+  - index : 최상위 경로
+  - path : api 경로
+  - element : 경로가 일치할 경우 응답할 element
+
+**useNavigate()**
+- Routing을 도와주는 Hook
+- onClick 등을 통한 이벤트 처리에 대한 응답으로 `navigate(path)`를 호출하면, 페이지를 라우팅한다.
