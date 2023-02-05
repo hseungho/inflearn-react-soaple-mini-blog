@@ -51,7 +51,7 @@ const CommentLabel = styled.p`
 
 function PostViewPage(props) {
     const navigate = useNavigate();
-    const { postId } = useParams();
+    const { postId } = useParams(); // url의 param을 가져오는 hook
 
     const post = data.find((item) => {
         return item.id == postId;
